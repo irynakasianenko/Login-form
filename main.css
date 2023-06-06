@@ -1,0 +1,175 @@
+@font-face {
+	font-family: 'Inter';
+	src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+
+.container {
+	margin: auto;
+	height: 100vh;
+	color: #1A1A1A;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: 700;
+	padding: 10px;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 400;
+	padding: 10px;
+}
+
+.sign-in-container, .sign-up-container {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ebefff;
+}
+
+.sign-in-container .sign-in-container-left {
+	width: 50%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: url(assets/images/sign-in-img-left-form1.png) no-repeat bottom left, url(assets/images/sign-in-img-left-form2.png) no-repeat bottom left -2%; 
+}
+
+.sign-in-container .sign-in-container-right {
+	width: 50%;
+	display: flex;
+}
+
+.sign-in-container .sign-in-container-right .left {
+	height: 100vh;
+	width: 40%;
+	
+}
+
+.sign-in-container .sign-in-container-right img {
+	position: absolute;
+	width: 30%;
+	margin: 100px 10px 10px 80px;
+}
+
+.sign-in-container .sign-in-container-right .right {
+	background-color: #AFB3FF;
+	height: 100vh;
+	width: 60%;
+}
+
+.sign-up-container .sign-up-container-left {
+	width: 60%;
+	height: 100vh;
+	background: url(assets/images/sign-up-img-left-form1.png) no-repeat top left 25%, url(assets/images/sign-up-img-left-form2.png) no-repeat top left 8%;
+}
+
+.sign-up-container .sign-up-container-left img {
+	width: 80%;
+	margin: 10% 10px 10px 10%;
+}
+
+.sign-up-container .sign-up-container-right {
+	width: 40%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+form {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 80%;
+}
+
+form .sign-element input, input#name {
+	width: 100%;
+	margin: 10px 0;
+	border-radius: 50px;
+	border: 1px solid #656ED3;
+	font-size: 20px;
+	padding: 10px;
+}
+
+form .sign-element input:focus {
+	border: none;
+	box-shadow: 1px 2px 18px 10px rgba(101,110,211,0.75);
+	outline: #656ed3;
+}
+
+form .sign-element .submit {
+	margin: 20px 0;
+	background-color: #656ed3;
+	color: #fff;
+}
+
+form .sign-element .submit:hover {
+	background-color: #9ba0d1;
+	border-color: #9ba0d1;
+	cursor: pointer;
+}
+
+form .sign-element .submit:active {
+	box-shadow: none;
+}
+
+.register:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.error {
+	display: none;
+}
+
+.sign-element input.wrong {
+	border: 1px solid red;
+}
+
+.sign-element input.wrong:focus {
+	box-shadow: 1px 2px 9px 5px rgba(213, 16, 16, 0.4);
+}
+
+.visible {
+	padding: 10px;
+	font-size: 14px;
+	color: red;
+}
+
+.visible {
+	display: block;
+}
+
+.wrong {
+	border: 1px solid red;
+}
+
+div.hidden {
+	display: none;
+}
+
+@media(max-width: 1024px) {
+	.sign-in-container .sign-in-container-right, .sign-up-container .sign-up-container-left {
+		display: none;
+	}
+
+	.sign-in-container .sign-in-container-left, .sign-up-container .sign-up-container-right {
+		width: 100%;
+	}
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login form</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="sign-in-container">
+			<div class="sign-in-container-left">
+				<h1>Welcome Back!</h1>
+				<form name="signIn" id="signIn">
+					<div class="sign-element">
+						<label for="userNameIn">Username:</label>
+						<input type="text" id="userNameIn" required>
+						<p class="error">Please enter your username.</p>
+					</div>
+					<div class="sign-element">
+						<label for="passwordIn">Password:</label>
+						<input type="password" id="passwordIn" required>
+						<p class="error">Please enter your password.</p>
+					</div>
+					<div>
+						<input type="checkbox" id="remember">
+						<label for="remember">Rememeber me</label>
+					</div>
+					<div class="sign-element">
+						<input type="submit" class="submit" value="Log in">
+					</div>
+				</form>
+				<h2>Do not have an account?</h2>
+				<p class="register" id="register">Register</p>
+			</div>
+			<div class="sign-in-container-right">
+				<img src="assets/images/sign-in-img-right.png" alt="image of the computer">
+				<div class="left">
+				</div>
+				<div class="right"></div>
+			</div>
+		</div>
+		<div class="sign-up-container hidden">
+			<div class="sign-up-container-left">
+				<img src="assets/images/sign-up-img-right.png" alt="image of the computer">
+			</div>
+			<div class="sign-up-container-right">
+				<h1>Please Fill out form to Register!</h1>
+				<form name="signUp" id="signUp">
+					<div clas="sign-element">
+						<label for="name">Name:</label>
+						<input type="text" id="name" pattern="([a-zA-Z]+)" required>
+						<p class="error">Please enter your name in English.</p>
+					</div>
+					<div class="sign-element">
+						<label for="userNameUp">Username:</label>
+						<input type="text" id="userNameUp" required>
+						<p class="error">Please enter your username.</p>
+					</div>
+					<div class="sign-element">
+						<label for="email">Email:</label>
+						<input type="email" id="email" required>
+						<p class="error">Supplying your Email Address is required.</p>
+					</div>
+					<div class="sign-element">
+						<label for="passwordUp">Password:</label>
+						<input type="password" id="passwordUp"
+							pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+						<p class="error">The password should contain at least 8
+							characters, one upper case letter, one lower case letter, one number.</p>
+					</div>
+					<div class="sign-element">
+						<label for="confirmPassword">Confirm password:</label>
+						<input type="password" id="confirmPassword" required>
+						<p class="error">Please confirm your password.</p>
+					</div>
+					<div class="sign-element">
+						<input type="submit" class="submit" value="Register">
+					</div>
+				</form>
+				<h2>Already have an account?</h2>
+				<p class="register" id="sign-in">Sign in</p>
+			</div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+
+</html>
