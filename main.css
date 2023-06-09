@@ -107,9 +107,10 @@ form .sign-element input, input#name {
 	border: 1px solid #656ED3;
 	font-size: 20px;
 	padding: 10px;
+	transition: 0.4s;
 }
 
-form .sign-element input:focus {
+form .sign-element input:focus, input#name:focus {
 	border: none;
 	box-shadow: 1px 2px 18px 10px rgba(101,110,211,0.75);
 	outline: #656ed3;
@@ -148,7 +149,7 @@ form .sign-element .submit:active {
 	border: 1px solid red;
 }
 
-.sign-element input.wrong:focus {
+.sign-element input.wrong:focus, input#name.wrong:focus {
 	box-shadow: 1px 2px 9px 5px rgba(213, 16, 16, 0.4);
 }
 
